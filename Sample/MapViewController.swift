@@ -37,24 +37,24 @@ class MapViewController: UIViewController {
         trailingConstraint.isActive = true
         
         // Colour view
-//        let colourView = UIView()
-//        colourView.backgroundColor = .red
-//        colourView.translatesAutoresizingMaskIntoConstraints = false
-//        view.addSubview(colourView)
-//        let hAlignCenterContraint = colourView.centerXAnchor.constraint(equalTo: view.centerXAnchor)
-//        let vAlignCenterContraint = colourView.centerYAnchor.constraint(equalTo: view.centerYAnchor)
-//        let widthContraint = colourView.widthAnchor.constraint(equalToConstant: 100)
-//        let aspectRatioContraint = NSLayoutConstraint(item: colourView,
-//                                                      attribute: .width,
-//                                                      relatedBy: .equal,
-//                                                      toItem: colourView,
-//                                                      attribute: .height,
-//                                                      multiplier: 1,
-//                                                      constant: 0)
-//        hAlignCenterContraint.isActive = true
-//        vAlignCenterContraint.isActive = true
-//        widthContraint.isActive = true
-//        aspectRatioContraint.isActive = true
+        let colourView = UIView()
+        colourView.backgroundColor = .red
+        colourView.translatesAutoresizingMaskIntoConstraints = false
+        view.addSubview(colourView)
+        let hAlignCenterContraint = colourView.centerXAnchor.constraint(equalTo: view.centerXAnchor)
+        let vAlignCenterContraint = colourView.centerYAnchor.constraint(equalTo: view.centerYAnchor)
+        let widthContraint = colourView.widthAnchor.constraint(equalToConstant: 100)
+        let aspectRatioContraint = NSLayoutConstraint(item: colourView,
+                                                      attribute: .width,
+                                                      relatedBy: .equal,
+                                                      toItem: colourView,
+                                                      attribute: .height,
+                                                      multiplier: 1,
+                                                      constant: 0)
+        hAlignCenterContraint.isActive = true
+        vAlignCenterContraint.isActive = true
+        widthContraint.isActive = true
+        aspectRatioContraint.isActive = true
     }
     
     @objc func mapTypeChanged(_ segControl: UISegmentedControl) {
