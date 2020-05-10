@@ -20,6 +20,7 @@ class MapViewController: UIViewController {
         
         let segmentedControl = UISegmentedControl(items: ["Standard", "Hybrid", "Satellite"])
         segmentedControl.backgroundColor = UIColor.white.withAlphaComponent(0.1)
+
         segmentedControl.selectedSegmentIndex = 0
         segmentedControl.addTarget(self, action: #selector(mapTypeChanged), for: .valueChanged)
         view.addSubview(segmentedControl)
