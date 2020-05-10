@@ -38,7 +38,7 @@ class MapViewController: UIViewController {
         
         // Colour view
         let colourView = UIView()
-        colourView.backgroundColor = .red
+        colourView.backgroundColor = .yellow
         colourView.translatesAutoresizingMaskIntoConstraints = false
         view.addSubview(colourView)
         let hAlignCenterContraint = colourView.centerXAnchor.constraint(equalTo: view.centerXAnchor)
